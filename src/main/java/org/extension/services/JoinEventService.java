@@ -13,7 +13,7 @@ public class JoinEventService {
 
     public void sendTitle(PlayerJoinEvent playerJoinEvent) {
         Player player = playerJoinEvent.getPlayer();
-        TextComponent textComponent = textGenerator.create("Text", "#BCC2FF");
+        TextComponent textComponent = textGenerator.generator("Text", "#BCC2FF");
         player.sendTitle(textComponent.toLegacyText(), "sub", 50, 50, 50);
     }
 }
