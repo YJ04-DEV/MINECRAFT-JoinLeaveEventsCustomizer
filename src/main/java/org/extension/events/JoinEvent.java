@@ -11,5 +11,6 @@ public class JoinEvent implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent playerJoinEvent) {
         joinEventService.setJoinMessage(playerJoinEvent);
+        joinEventService.sendTitle(playerJoinEvent);
     }
 }
